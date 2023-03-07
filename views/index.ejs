@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> | <%= page %></title>
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <%- include('./components/header') %>
+</head>
+<body>
+    <%- include('./components/navbar') %>
+    <div class="a-conatiner">
+        <form id="urlForm">
+            <div class="feedback"></div>
+            <div class="form-control">
+                <label for="url">Destination Url</label>
+                <input type="url" name="url" placeholder="http://your_url.com" id="url">
+            </div>
+            <div class="button-control">
+                <button class="urlBtn">Create</button>
+            </div>
+        </form>
+        <div class="result-preview">
+            <!-- <div class="created-url">
+                <span>Your destination Url: </span> <span> <a href="http://localhost:4563/AVJgvGQZ" target="_blank"> http://localhost:4563/AVJgvGQZ</a> </span>
+            </div>
+            <div class="created-url">
+                <span>Your short url: </span> <span> <a href="http://localhost:4563/AVJgvGQZ" target="_blank"> http://localhost:4563/AVJgvGQZ</a> </span>
+            </div>
+            <div class="qrcode">
+                <span>QR Code of your short url</span>
+                <img src="" width="270" alt="QRCode">
+            </div> -->
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>

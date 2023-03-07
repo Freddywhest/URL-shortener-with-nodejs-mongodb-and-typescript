@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.a-conatiner{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-control input{
+    width: 600px;
+    padding: 8px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(97, 97, 97);
+}
+
+.form-control input:focus{
+    outline: none;
+}
+
+.form-control label{
+    font-size: 1.2rem;
+}
+
+button{
+    padding: 10px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    background-color: rgb(68, 182, 248);
+    border: 1px solid rgb(68, 182, 248);
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+
+button:hover{
+    background-color: transparent;
+    color: rgb(97, 97, 97);
+}
+
+.feedback{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.result-preview{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-preview .created-url{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.result-preview .created-url span:last-child{
+    font-weight: 700;
+    inline-size: 640px;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.result-preview .created-url a{
+    color: rgb(6, 97, 201);
+}
+
+.result-preview .qrcode{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.result-preview .qrcode span{
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 650px) {
+
+    .form-control input{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .result-preview .created-url{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .result-preview .created-url span:last-child{
+        inline-size: 445px;
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+
+    .result-preview .created-url span:last-child{
+        inline-size: 300px;
+    }
+    
+}
+
+@media screen and (max-width: 462px) {
+
+    .form-control input{
+        width: 300px;
+    }
+    
+}
+
+@media screen and (max-width: 338px) {
+
+    .form-control input{
+        width: 100%;
+    }
+    
+}
